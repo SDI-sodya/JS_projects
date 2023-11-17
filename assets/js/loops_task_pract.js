@@ -53,6 +53,15 @@ const pow = function(num,powNum) {
     return num;
 }
 
+const fact = function(num) {
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result*=i;
+        console.log(i);
+    }
+    return result;
+}
+
 
 
 
@@ -70,3 +79,7 @@ let answerTask2 = task2Check();
 num1 = +prompt("Введіть число, яке хоче піднести до степеня");
 num2 = +prompt("Введіть ступінь числа");
 alert(pow(num1,num2));
+
+// bonus task
+num1 = +prompt("Введіть число. Ми переробимо його на факторіал");
+alert(fact(num1));
