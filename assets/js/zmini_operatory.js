@@ -61,8 +61,8 @@ console.log(g);
 
 console.log(!!e)
 
-let num = 5
+let num = 5;
 num+=10;
 num*=2;
-num-+4;
+num-=4;
 num/=6;
