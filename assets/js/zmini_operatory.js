@@ -60,3 +60,9 @@ let g = e % 2.687;
 console.log(g);
 
 console.log(!!e)
+
+let num = 5
+num+=10;
+num*=2;
+num-+4;
+num/=6;
