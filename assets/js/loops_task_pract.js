@@ -59,17 +59,11 @@ const fact = function(num) {
 
 const simpComplNum = function(num) {
     if (isItNumber(num) !== true) {alert(null);return null;};
-    if (num < 0 || num === 0) {
-        return null;
-    }
-    for (let i = 2; i <= num; i++) {
-        if (num % i !== 0) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
+    if (num < 0 || num === 0) { return null; }
+    for (let i = 2; i <= 10; i++) {
+        if (num % i === 0 && num % num === 0) return false;
+    };
+    return true;
 }
 
 
