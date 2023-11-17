@@ -37,6 +37,32 @@ const calculator = function(num1=0, num2=0, operator="+") {
         return null;
     }
     let result;
+    switch (operator) {
+        case "+": {
+            result=num1+num2;
+            alert(result);
+            return result;
+        }
+        case "-": {
+            result=num1-num2;
+            alert(result);
+            return result;
+        }
+        case "/": {
+            result=num1/num2;
+            alert(result);
+            return result;
+        }
+        case "*": {
+            result=num1*num2;
+            alert(result);
+            return result;
+        }
+        default: {
+            alert("перезавантажте сторінку. Щось не так :'(");
+            break;
+        }
+    }
     if (operator == "+") {
         result=num1+num2;
         alert(result);

@@ -30,3 +30,41 @@ if (true) {
 }
 
 console.log(test1);
+
+
+alert(test1 == '3dfd' ? 'OK!' : 'No(');
+(100 > 10) ? 'Yes' : 'No';
+
+// switch .. case
+
+/* 
+    1 - класична
+    2 - пепперонні
+    3 - американо
+    4 - 4 сира
+*/
+
+let itemNumber = +prompt('Яку піцу ви зочете замовити?');
+
+switch (itemNumber) {
+    case 1: {
+        alert('Ви замовили класичну піцу');
+        break;
+    }
+    case 2: {
+        alert('Ви замовили пепперонні піцу');
+        break;
+    }
+    case 3: {
+        alert('Ви замовили американо піцу');
+        break;
+    }
+    case 4:{
+        alert('Ви замовили 4 сира піцу');
+        break;
+    }
+    default:{
+        alert('Немає такого коду піци');
+        break;
+    }
+}
