@@ -36,31 +36,42 @@ const task2Check = function() {
 }
 
 const pow = function(num,powNum) {
-    if (isItNumber(num) !== true || isItNumber(powNum) !== true) {alert(null);return null;}
+    if (isItNumber(num) !== true || isItNumber(powNum) !== true) {alert(null);return null;};
     
-    if (powNum > 0) {
-        for (let i = 1; i < powNum; i++) {
-            num*=num;
-        };
-    } else if (powNum < 0) {
-        for (let i = 1; i < -(powNum); i++) {
-            num*=num;
-        };
-        num = 1/num;
-    } else if (powNum == 0) {
-        num=1;
-    }
+    if (powNum > 0) { for (let i = 1; i < powNum; i++) {num*=num;}; }
+    else if (powNum < 0) { for (let i = 1; i < -(powNum); i++) {num*=num;};num = 1/num; }
+    else if (powNum == 0) { num=1; };
     return num;
 }
 
 const fact = function(num) {
-    let result = 1;
-    for (let i = 1; i <= num; i++) {
-        result*=i;
-        console.log(i);
+    if (isItNumber(num) !== true) {alert(null);return null;};
+    if (num < 0) {
+        return null;
     }
+    else if (num === 0) {
+        return 1;
+    }
+    let result = 1;
+    for (let i = 1; i <= num; i++) { result*=i; };
     return result;
 }
+
+const simpComplNum = function(num) {
+    if (isItNumber(num) !== true) {alert(null);return null;};
+    if (num < 0 || num === 0) {
+        return null;
+    }
+    for (let i = 2; i <= num; i++) {
+        if (num % i !== 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+}
+
 
 
 
@@ -80,6 +91,10 @@ num1 = +prompt("Введіть число, яке хоче піднести до
 num2 = +prompt("Введіть ступінь числа");
 alert(pow(num1,num2));
 
-// bonus task
+// bonus task 1
 num1 = +prompt("Введіть число. Ми переробимо його на факторіал");
 alert(fact(num1));
+
+// bonus task 2
+num1 = +prompt("Введіть число");
+alert(simpComplNum(num1));
