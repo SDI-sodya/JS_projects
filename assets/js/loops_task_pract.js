@@ -4,7 +4,7 @@ function isItNumber(num) {
 
 const numArrSum = function(num1,num2) {
     if (isItNumber(num1) !== true || isItNumber(num2) !== true) {alert(null);return null;}
-    result = 0;
+    let result = 0;
     for (let i = num1; i <= num2; i++) {
         result+=i;
     }
