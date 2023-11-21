@@ -63,26 +63,26 @@ const calculator = function(num1=0, num2=0, operator="+") {
             break;
         }
     }
-    if (operator == "+") {
-        result=num1+num2;
-        alert(result);
-        return result;
-    }
-    else if (operator == "-") {
-        result=num1-num2;
-        alert(result);
-        return result;
-    }
-    else if (operator == "/") {
-        result=num1/num2;
-        alert(result);
-        return result;
-    }
-    else if (operator == "*") {
-        result=num1*num2;
-        alert(result);
-        return result;
-    }
+    // if (operator == "+") {
+    //     result=num1+num2;
+    //     alert(result);
+    //     return result;
+    // }
+    // else if (operator == "-") {
+    //     result=num1-num2;
+    //     alert(result);
+    //     return result;
+    // }
+    // else if (operator == "/") {
+    //     result=num1/num2;
+    //     alert(result);
+    //     return result;
+    // }
+    // else if (operator == "*") {
+    //     result=num1*num2;
+    //     alert(result);
+    //     return result;
+    // }
 };
 
 
