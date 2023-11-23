@@ -68,3 +68,25 @@ switch (itemNumber) {
         break;
     }
 }
+
+
+
+// 
+// 
+
+// myFirstFunction(5,2); ERROR
+
+// function expression - параметрична функція
+// параметр функції - спеціальна змінна, достпуна тільки всередині функції
+const myFirstFunction = function(testValue,testValue2) {
+    return testValue + testValue2;
+}
+
+sum2(5,5);
+
+// functional declaration - об'ява функції
+function sum2(num1,num2) {
+    debugger;
+    return num1 + num2;
+}
+
