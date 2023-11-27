@@ -42,7 +42,6 @@ const task2Check = function () {
   //     }
   //     default: {
   //       alert("У вас залишилося " + i + " спроб");
-  //       break;
   //     }
   //   }
   //   i--;
@@ -77,7 +76,6 @@ const task2Check = function () {
   //     }
   //     default: {
   //       alert("У вас залишилося " + i + " спроб");
-  //       break;
   //     }
   //   }
   //   answer = +prompt("Порахуй скільки буде (2 + 2 * 2)");
@@ -91,7 +89,6 @@ const task2Check = function () {
   //     alert("Невірно. Спробуй ще раз!");
   //   } else {
   //     alert("Все вірно! Ти молодець!");
-  //     break;
   //   }
   //   i--;
   // }
@@ -113,7 +110,6 @@ const task2Check = function () {
       }
       default: {
         alert("У вас залишилося " + i + " спроб");
-        break;
       }
     }
     answer = +prompt("Порахуй скільки буде (2 + 2 * 2)");
