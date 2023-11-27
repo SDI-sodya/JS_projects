@@ -7,13 +7,11 @@ const numArrSum = function (num1, num2) {
   let result = 0,
     i = num1;
   // while(i <= num2) {
-  //   result += i;
-  //   i++;
+  //   result += i++;
   // }
 
   // do {
-  //   result += i;
-  //   i++;
+  //   result += i++;
   // } while (i <= num2);
 
   for (let i = num1; i <= num2; i++) {
