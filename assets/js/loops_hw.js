@@ -20,6 +20,8 @@ const numArrSum = function (num1, num2) {
   return result;
 };
 
+// =========================
+
 const task2Check = function () {
   let result = 6,
     answer = 0;
@@ -131,6 +133,8 @@ const task2Check = function () {
   }
 };
 
+// =========================
+
 const pow = function (num, powNum) {
   if (!isItNumber(num) || !isItNumber(powNum)) return null;
 
@@ -149,6 +153,8 @@ const pow = function (num, powNum) {
   return num;
 };
 
+// =========================
+
 const fact = function (num) {
   if (!isItNumber(num)) return null;
   if (num < 0) return null;
@@ -160,6 +166,8 @@ const fact = function (num) {
   }
   return result;
 };
+
+// =========================
 
 const simpComplNum = function (num) {
   if (!isItNumber(num)) return null;
