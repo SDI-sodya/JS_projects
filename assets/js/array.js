@@ -189,3 +189,18 @@ const antonIndex1 = betterUsers.findIndex(function (name) {
 
 // indexOf
 const antonIndex3 = betterUsers.indexOf("Anton");
+
+const nums3 = [1, 2, 3, 4, 5];
+// непарні числа - множити на 3
+// парні числа - зводити у 5 ступінь
+// const nums4 = nums3.map(function (number) {
+//   if (number % 2 !== 0) {
+//     // парне
+//     return number ** 5;
+//   } else {
+//     // непарне
+//     return number * 3;
+//   }
+// });
+
+const nums4 = nums3.map((num) => (num % 2 === 0 ? num ** 5 : num * 3));
