@@ -100,10 +100,10 @@ const reversedArray = names.reverse(); // reversedArray === names -> true
 
 // flat
 const deepArray = [
-  "first",
-  "second",
-  ["deep-1", "deep-2", "deep-3", "deep-4", ["deeper-1", ["deepest"]]],
-  "fourth",
+	"first",
+	"second",
+	["deep-1", "deep-2", "deep-3", "deep-4", ["deeper-1", ["deepest"]]],
+	"fourth",
 ];
 
 // deeper-1
@@ -157,34 +157,34 @@ const num1 = [1, 2, 3, 4, 5];
 // map - повертає новий масив з результатами виклику коллбеків для кожного елементу початкового масиву
 
 const newArray = num1.map(function (number) {
-  return Math.pow(number, 4);
+	return Math.pow(number, 4);
 });
 
 // filter - повертає новий масив, який складається з елементів які пройшли перевірку у колбек-функції
 const betterUsers = ["Adriy", "Petro", "Natalka", "Olena", "Anton", "John"];
 
 const noAntonsAllowed = betterUsers.filter(function callback(name) {
-  return name !== "Anton";
+	return name !== "Anton";
 });
 
 // some - працює до першого true
 const isAntonInArray = betterUsers.some(function (name) {
-  return name === "Anton";
+	return name === "Anton";
 });
 
 // every - працює до першого false
 const isAntonInArray2 = betterUsers.every(function (name) {
-  return name === "Anton";
+	return name === "Anton";
 });
 
 // find - працбє до першого знайденого елемента з заданою умовою. виводить елемент
 const firstAnton = betterUsers.find(function (name) {
-  return name === "Anton";
+	return name === "Anton";
 });
 
 // findIndex - працбє до першого знайденого елемента з заданою умовою. виводить індекс
 const antonIndex1 = betterUsers.findIndex(function (name) {
-  return name === "Anton";
+	return name === "Anton";
 });
 
 // indexOf
@@ -207,7 +207,7 @@ const nums4 = nums3.map((num) => (num % 2 === 0 ? num ** 5 : num * 3));
 
 // reduce - перетворює масив на конкретне значення
 const nums6 = [10, 30, 51, -8];
-
+debugger;
 const result = nums6.reduce((acc, num, i, arr) => (acc += num));
 
 /*
@@ -219,3 +219,7 @@ const result = nums6.reduce((acc, num, i, arr) => (acc += num));
   (+,-,*,/)
   4- результати розрахувати за допомогою методу масиву reduce
 */
+
+const nums7 = [34, 12, 75, 34, 1, 26, 87, 34, 23, 76];
+
+const calc = nums6.reduce();
