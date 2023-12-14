@@ -1,25 +1,25 @@
 let value = "test value";
 
 function test1() {
-  console.log(`Value in test1: ${value}`);
+	console.log(`Value in test1: ${value}`);
 }
 
 function test2() {
-  let value = 500;
+	let value = 500;
 
-  console.log(`Value in test2: ${value}`);
+	console.log(`Value in test2: ${value}`);
 }
 
 function wrapper() {
-  let value = null;
-  console.log(`Value in wrapper: ${value}`);
+	let value = null;
+	console.log(`Value in wrapper: ${value}`);
 
-  function test3() {
-    debugger;
-    console.log(`Value in test3: ${value}`);
-  }
+	function test3() {
+		debugger;
+		console.log(`Value in test3: ${value}`);
+	}
 
-  test3();
+	test3();
 }
 
 // BAD EXAMPLE
@@ -44,17 +44,17 @@ function wrapper() {
 // const counter2 = createCounter();
 
 function createCounter() {
-  let i = 0;
-  const increment = function () {
-    return ++i;
-  };
-  const decrement = function () {
-    return --i;
-  };
-  return {
-    increment,
-    decrement,
-  };
+	let i = 0;
+	const increment = function () {
+		return ++i;
+	};
+	const decrement = function () {
+		return --i;
+	};
+	return {
+		increment,
+		decrement,
+	};
 }
 
 // function createMultiplier(x) {
